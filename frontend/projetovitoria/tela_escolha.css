@@ -1,0 +1,211 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    filter: blur(0px);
+    z-index: 0;
+    
+}
+
+.neo {
+    height: 90px;
+    width: 100%;
+    background-color: rgb(196, 193, 193);
+    display: flex;
+    align-items: center;
+}
+
+.neo img {
+    margin-left: 20px;
+}
+
+.login1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    flex-grow: 1;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.login,
+.cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+}
+
+.login h2, .login h4, .cadastro h2, .cadastro h4 {
+    margin: 0;
+    color: grey;
+}
+
+#barra {
+    width: 3px;
+    height: 300px;
+    background-color: black;
+    margin: 0;
+}
+
+#botao,
+#botao2 {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 10px;
+}
+
+#botao {
+    background-color: black;
+    color: white;
+}
+
+#botao:hover {
+    background-color: #333;
+}
+
+#botao2 {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+#botao2:hover {
+    background-color: #eee;
+}
+
+footer {
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 330px;
+    
+  
+}
+
+footer p {
+    margin: 0 0 10px 0;
+    font-size: 0.9em;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer nav ul li {
+    margin: 0 15px;
+}
+
+footer nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer nav ul li a:hover {
+    color: #007bff;
+}
+.cabeca{
+    margin-left: 40px;
+    margin-top: 50px;
+
+}
+
+
+
+.cabeca h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+#tela_login{
+    height: 525px;
+    width: 500px;
+    background-color: white;
+    display: none;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    margin-top: -830px;
+    z-index: 1;
+   float: none;
+    
+
+}
+form{
+    height: 20px;
+    width: 80%;
+    text-align: center;
+    justify-content: center;
+     z-index: 2;
+    align-items: center;
+    margin-left: 55px;
+}
+input{
+    text-align: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 4px;
+    box-shadow: 0 0 0 0;
+    border: 0.5 black;
+    outline: 0;
+    margin: 8px;
+    align-items: center;
+
+    
+}
+.icons{
+    height: 20px;
+    width: 20px;
+}
+#email{
+    height: 20px;
+    width: 20px;
+    margin-left: 120px;
+    margin-top: 25px;
+    z-index: 1;
+}
+#senha{
+    height: 20px;
+    width: 20px;
+    margin-left: 120px;
+    margin-top: 30px;
+}
+
+#btlogin{
+    margin-top: 50px;
+
+}
+#h2login{
+    align-items: center;
+    text-align: center;
+}
+
+
+
