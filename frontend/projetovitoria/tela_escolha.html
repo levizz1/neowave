@@ -64,11 +64,16 @@
    </div>
     <div id="tela_login">
                 <button onclick="sair()">voltar</button>
-                <H2 style="color: grey; font-family: poppins;">Identifique-se</H2>
+                <H2 id="h2login" style="color: grey; font-family: poppins; ">Identifique-se</H2>
                 <form ´action="email" > 
-                    <input placeholder="Email" type="email" >
-                    <input placeholder="senha" type="password">
-                   <a href="projetov.html"> <button style="background-color: black; color: white; " onclick="login()">Entrar</button> </a>
+                    <div class="icons">
+                    <img id="email" src="o-email.png" alt="email">
+                    <img id="senha" src="cadeado.png" alt="senha">
+                    
+                </div>
+                    <input placeholder="Email" type="email" > <br>
+                    <input  placeholder="senha" type="password">
+                   <a href="projetov.html"> <br> <button id="btlogin" style="background-color: black; color: white; height: 30px; width: 100px; border-radius: 4px;  " onclick="login()">Entrar</button> </a>
                 </form>
             </div>
   <script> 

@@ -146,7 +146,7 @@ footer nav ul li a:hover {
 
 #tela_login{
     height: 525px;
-    width: 425px;
+    width: 500px;
     background-color: white;
     display: none;
     align-items: center;
@@ -163,6 +163,48 @@ form{
     width: 80%;
     text-align: center;
     justify-content: center;
+     z-index: 2;
+    align-items: center;
+    margin-left: 55px;
+}
+input{
+    text-align: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 4px;
+    box-shadow: 0 0 0 0;
+    border: 0.5 black;
+    outline: 0;
+    margin: 8px;
+    align-items: center;
+
+    
+}
+.icons{
+    height: 20px;
+    width: 20px;
+}
+#email{
+    height: 20px;
+    width: 20px;
+    margin-left: 120px;
+    margin-top: 25px;
+    z-index: 1;
+}
+#senha{
+    height: 20px;
+    width: 20px;
+    margin-left: 120px;
+    margin-top: 30px;
+}
+
+#btlogin{
+    margin-top: 50px;
+
+}
+#h2login{
+    align-items: center;
+    text-align: center;
 }
 
 
