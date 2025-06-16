@@ -1,211 +1,260 @@
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-#body {
+body {
     font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    color: #333;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    filter: blur(0px);
-    z-index: 0;
-    
 }
 
 .neo {
-    height: 90px;
-    width: 100%;
-    background-color: rgb(196, 193, 193);
-    display: flex;
-    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+    background-color: black;
 }
 
 .neo img {
-    margin-left: 20px;
-}
-
-.login1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 80px;
-    flex-grow: 1;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.login,
-.cadastro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-}
-
-.login h2, .login h4, .cadastro h2, .cadastro h4 {
-    margin: 0;
-    color: grey;
-}
-
-#barra {
-    width: 3px;
-    height: 300px;
-    background-color: black;
-    margin: 0;
-}
-
-#botao,
-#botao2 {
-    width: 200px;
     height: 50px;
-    font-size: 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    margin-top: 10px;
+    filter: brightness(0) invert(1);
 }
 
-#botao {
+.cabeca {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+}
+
+.btn-saida {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
     background-color: black;
-    color: white;
+    transition: background-color 0.3s ease;
 }
 
-#botao:hover {
+.btn-saida:hover {
     background-color: #333;
 }
 
-#botao2 {
-    background-color: white;
-    color: black;
-    border: 1px solid black;
+.btn-saida img {
+    height: 25px;
+    width: 25px;
+    filter: invert(100%);
 }
 
-#botao2:hover {
-    background-color: #eee;
+.opcoes-login-cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+    gap: 30px;
+    flex-grow: 1;
+}
+
+.opcao-card {
+    border-radius: 10px;
+    box-shadow: none;
+    padding: 35px 30px;
+    text-align: center;
+    flex: 1;
+    min-width: 280px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.opcao-card h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.opcao-card h4 {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.opcao-card button {
+    padding: 15px 30px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.modalEntrar {
+    background-color: #000;
+    color: #fff;
+}
+
+.modalEntrar:hover {
+    background-color: #333;
+}
+
+.modalCadastrar {
+    background-color: #fff;
+    color: #000;
+}
+
+.modalCadastrar:hover {
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+.divisor {
+    width: 1px;
+    height: 200px;
+    background-color: #ccc;
+    margin: 0 40px;
 }
 
 footer {
     background-color: black;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    margin-top: 330px;
-    
-  
-}
-
-footer p {
-    margin: 0 0 10px 0;
+    color: white;
+    padding: 40px 20px;
     font-size: 0.9em;
+    text-align: center;
 }
 
-footer nav ul {
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.footer-logo {
+    height: 40px;
+    filter: brightness(0) invert(1);
+    margin-bottom: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 150px;
+    text-align: left;
+}
+
+.footer-section h3 {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: white;
+}
+
+.footer-section ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
 }
 
-footer nav ul li {
-    margin: 0 15px;
+.footer-section ul li {
+    margin-bottom: 8px;
 }
 
-footer nav ul li a {
-    color: #fff;
+.footer-section ul li a {
+    color: white;
     text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
+    transition: text-decoration 0.3s ease;
 }
 
-footer nav ul li a:hover {
-    color: #007bff;
-}
-.cabeca{
-    margin-left: 40px;
-    margin-top: 50px;
-
+.footer-section ul li a:hover {
+    text-decoration: underline;
 }
 
-
-
-.cabeca h1 {
+.footer-section p {
     margin: 0;
-    font-size: 24px;
+    line-height: 1.5;
 }
 
-#tela_login{
-    height: 525px;
-    width: 500px;
-    background-color: white;
-    display: none;
-    align-items: center;
-    margin: auto;
-    justify-content: center;
-    margin-top: -830px;
-    z-index: 1;
-   float: none;
-    
-
-}
-form{
-    height: 20px;
-    width: 80%;
-    text-align: center;
-    justify-content: center;
-     z-index: 2;
-    align-items: center;
-    margin-left: 55px;
-}
-input{
-    text-align: center;
-    justify-content: center;
-    padding: 5px;
-    border-radius: 4px;
-    box-shadow: 0 0 0 0;
-    border: 0.5 black;
-    outline: 0;
-    margin: 8px;
-    align-items: center;
-
-    
-}
-.icons{
-    height: 20px;
-    width: 20px;
-}
-#email{
-    height: 20px;
-    width: 20px;
-    margin-left: 120px;
-    margin-top: 25px;
-    z-index: 1;
-}
-#senha{
-    height: 20px;
-    width: 20px;
-    margin-left: 120px;
+.footer-bottom {
     margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    font-size: 0.8em;
 }
 
-#btlogin{
-    margin-top: 50px;
+@media (max-width: 768px) {
+    .opcoes-login-cadastro {
+        flex-direction: column;
+        gap: 20px;
+    }
 
+    .divisor {
+        width: 80%;
+        height: 1px;
+        margin: 20px 0;
+    }
+
+    .opcao-card {
+        max-width: 90%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-logo {
+        margin-bottom: 30px;
+    }
 }
-#h2login{
-    align-items: center;
-    text-align: center;
+
+@media (max-width: 480px) {
+    .neo img {
+        height: 40px;
+    }
+
+    .btn-saida {
+        height: 40px;
+        width: 40px;
+    }
+
+    .btn-saida img {
+        height: 20px;
+        width: 20px;
+    }
+
+    .opcao-card h2 {
+        font-size: 22px;
+    }
+
+    .opcao-card h4 {
+        font-size: 14px;
+    }
+
+    .opcao-card button {
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+
+    footer {
+        padding: 30px 15px;
+    }
 }
-
-
-

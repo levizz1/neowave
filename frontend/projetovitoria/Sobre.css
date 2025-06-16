@@ -1,0 +1,108 @@
+.sobre-nos-conteudo {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sobre-nos-conteudo h2 {
+    font-size: 32px;
+    color: #222;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.conteudo-principal {
+    text-align: left;
+    line-height: 1.8;
+    font-size: 16px;
+    color: #444;
+}
+
+.conteudo-principal p {
+    margin-bottom: 20px;
+}
+
+.conteudo-principal ul {
+    list-style: none;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.conteudo-principal ul li {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.conteudo-principal ul li::before {
+    content: '•';
+    color: #000;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.mvv-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.mvv-item {
+    flex: 1;
+    min-width: 280px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mvv-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+.mvv-item h3 {
+    font-size: 22px;
+    color: #000;
+    margin-bottom: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.mvv-item p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 0;
+}
+
+.mvv-item ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.mvv-item ul li {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.mvv-item ul li::before {
+    content: '★';
+    color: #000;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}

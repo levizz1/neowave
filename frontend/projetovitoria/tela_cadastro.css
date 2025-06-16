@@ -1,0 +1,263 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.neo {
+    text-align: center;
+    padding: 20px 0;
+    background-color: black;
+}
+
+.neo img {
+    height: 50px;
+    filter: brightness(0) invert(1);
+}
+
+.cabeca {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+}
+
+.btn-saida {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-color: black;
+    transition: background-color 0.3s ease;
+}
+
+.btn-saida:hover {
+    background-color: #333;
+}
+
+.btn-saida img {
+    height: 25px;
+    width: 25px;
+    filter: invert(100%);
+}
+
+.cadastro-container {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    min-height: calc(100vh - 100px - 200px);
+    flex-grow: 1;
+}
+
+.cadastro-box {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 700px;
+    box-sizing: border-box;
+}
+
+.cadastro-box h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px 30px;
+}
+
+@media (min-width: 768px) {
+    .form-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.form-group {
+    margin-bottom: 0;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #000;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.btn-cadastrar {
+    width: 100%;
+    padding: 15px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
+}
+
+.btn-cadastrar:hover {
+    background-color: #333;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 40px 20px;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.footer-logo {
+    height: 40px;
+    filter: brightness(0) invert(1);
+    margin-bottom: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 150px;
+    text-align: left;
+}
+
+.footer-section h3 {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: white;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: text-decoration 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-section p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    font-size: 0.8em;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-logo {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .neo img {
+        height: 40px;
+    }
+
+    .btn-saida {
+        height: 40px;
+        width: 40px;
+    }
+
+    .btn-saida img {
+        height: 20px;
+        width: 20px;
+    }
+
+    .cadastro-box h1 {
+        font-size: 26px;
+    }
+
+    .form-group label {
+        font-size: 0.9em;
+    }
+
+    .form-group input,
+    .form-group select {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    .btn-cadastrar {
+        padding: 12px;
+        font-size: 1em;
+    }
+
+    footer {
+        padding: 30px 15px;
+    }
+}

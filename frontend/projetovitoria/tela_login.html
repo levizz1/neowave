@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Neowave - Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="tela_login.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+  <header class="topo">
+    <img src="_Neowave.png" alt="Neowave Logo" class="logo">
+  </header>
+
+  <main class="login-container">
+    <section class="login-box">
+      <h2>Entrar na sua conta</h2>
+      <form id="loginForm">
+        <div class="input-field">
+          <i class="fas fa-user"></i>
+          <input type="text" placeholder="Email ou CPF/CNPJ" required>
+        </div>
+        <div class="input-field">
+          <i class="fas fa-lock"></i>
+          <input type="password" placeholder="Senha" required>
+        </div>
+        <button type="submit" class="btn-login">Login</button>
+        <a href="#" class="link">Esqueci minha senha</a>
+      </form>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <img src="_Neowave.png" class="footer-logo" alt="Logo">
+    <div class="footer-links">
+      <div>
+        <h3>Minha Conta</h3>
+        <a href="conta.html">Minha Conta</a>
+        <a href="#">Meus Pedidos</a>
+      </div>
+      <div>
+        <h3>Ajuda</h3>
+        <a href="#">Privacidade</a>
+        <a href="#">Trocas</a>
+      </div>
+      <div>
+        <h3>Contato</h3>
+        <p>neowave55@gmail.com</p>
+        <p>(88) 99243-9004</p>
+      </div>
+    </div>
+    <p class="copy">&copy; 2025 Neowave - Todos os direitos reservados</p>
+  </footer>
+
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Login realizado com sucesso!');
+      window.location.href = 'projetov.html';
+    });
+  </script>
+</body>
+</html>
