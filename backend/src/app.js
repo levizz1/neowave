@@ -10,6 +10,9 @@ app.use(express.json());
 
 // Importar rotas
 const authRoutes = require('./routes/auth');
+const carrinhoRoutes = require('./routes/carrinhoRoutes');
+
 app.use('/auth', authRoutes);
+app.use('/carrinho', carrinhoRoutes);
 
 module.exports = app;
